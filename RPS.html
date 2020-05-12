@@ -1,0 +1,74 @@
+
+<!-- //!  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="/RPS.css">
+
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+
+    <h1 id="myHeading"> Rock Paper Scissors</h1>
+<div id="container">
+    <div id="choice">
+       <h2> choice </h2> 
+        <div id=imageContainer>
+        <img id="rock" onclick="pickRock()" src="Images/Rock.svg">
+        <img id="paper" onclick="pickPaper()"src="Images/Paper.svg">
+        <img id="scissor" onclick="pickScissor()"src="Images/Scissor.svg">
+        </div>
+
+    </div>
+    <div id="playerGame">
+        <h2> player choice</h2>
+        <img id="playerRock" src="/Rock.svg">
+        <img id="playerPaper"src="/Paper.svg">
+        <img id="playerScissor"src="/Scissor.svg">
+    </div>
+    <div id="compGame">
+        <h2> computer choice </h2>
+        <img id="compRock"src="/Rock.svg">
+        <img id="compPaper"src="/Paper.svg">
+        <img id="compScissor"src="/Scissor.svg">
+    </div>
+    <div id="score">
+        <h2 id="scoreHeading"> score </h2>
+        <div id="player">
+            <label> Player Score: </label>
+            <label id="playerScore"> 0 </label>
+
+        </div>
+        <div id="comp">
+            <label> computer Score: </label>
+            <label id="compScore"> 0 </label>
+        </div>
+        <div id="draw">
+            <label> Draw Score: </label>
+        <label id="drawScore"> 0 </label>
+
+        </div>
+        
+       <button id="end" onclick="end()" class="myButton"> End </button>
+    
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+<script src="/RPS.js"></script>
+
+</body>
+
+<!-- //absolute paths  -->
+
+
+
+
+
+</html>
